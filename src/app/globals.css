@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin './hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-open-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-open-sans);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-wrap: pretty;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-wrap: pretty;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+img {
+  object-fit: cover;
+}
