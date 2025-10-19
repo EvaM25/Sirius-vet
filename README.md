@@ -1,6 +1,41 @@
 # Sirius-vet
 
-Веб-платформа для ветеринарной клиники Sirius-Vet в городе Калуга.
+Sirius-Vet project: A modern, user-friendly, and functional Web Platform for the veterinary clinic in Kaluga.🐶
+
+Key Achievements:
+
+✨Design Adaptation: The initial design provided by the client was preserved, with minor optimizations implemented by me.
+
+✨Technical Implementation: The project was developed using the modern Next.js framework, ensuring high development speed, excellent performance, and platform scalability.
+
+✨Interactivity and UX:  I utilized the HeroUI library to create responsive and intuitive navigation elements, enhancing user experience and simplifying interaction with key sections of the platform.
+ 
+✨Core Features:
+* Comprehensive informational system about services and veterinarians;
+* A dedicated section for clinic policies and useful client recommendations;
+*	Price list.
+  
+✨Stack: Next.js, React, TypeScript, HeroUI, Tailwind.
+
+🌍🌍🌍
+
+Проект Sirius-Vet: Современная, удобная и функциональная веб-платформа для ветеринарной клиники  в городе Калуга.🐶 
+
+Ключевые достижения: 
+
+✨Изначальный дизайн по желанию заказчика сохранен, мной были внесены небольшие оптимизации.
+
+✨Техническая реализация: Для разработки проекта был выбран современный фреймворк Next.js, который обеспечивает высокую скорость разработки, отличную производительность и масштабируемость платформы.
+
+✨Интерактивность и UX:  Использовала библиотеку HeroUI для создания отзывчивых и интуитивно понятных навигационных элементов, что улучшило пользовательский опыт и упростило взаимодействие с ключевыми разделами платформы.
+
+✨Основные функции:
+* Подробная справочная система об услугах и врачах
+* Раздел о правилах работы с клиникой, полезные рекомендации для клиентов
+* Прейскурант
+
+✨Технологический стек: Next.js, React, TypeScript, HeroUI, Tailwind.
+
 
 ## Getting Started
 
