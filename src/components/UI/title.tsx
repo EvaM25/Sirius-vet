@@ -3,7 +3,7 @@
 import { siteConfig } from "@/src/config/site.config";
 import { usePathname } from "next/navigation";
 
-const Title = () => {
+export default function Title() {
   const pathname = usePathname();
 
   const pageData =
@@ -18,6 +18,4 @@ const Title = () => {
       </h1>
     </div>
   );
-};
-
-export default Title;
+}

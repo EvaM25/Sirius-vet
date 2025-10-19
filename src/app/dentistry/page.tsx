@@ -1,8 +1,5 @@
-"use client";
-
 import { siteConfig } from "@/src/config/site.config";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 interface Dentistry {
   src: string;
@@ -14,18 +11,16 @@ interface DentistryConfig {
   equipment?: Dentistry[];
 }
 
-const Dentistry = () => {
-  const pathname = usePathname();
-
-  const dentistryConfig = siteConfig.pagesContent[
-    pathname as keyof typeof siteConfig.pagesContent
+export default function Dentistry() {
+  const DentistryConfig = siteConfig.pagesContent[
+    "/dentistry" as keyof typeof siteConfig.pagesContent
   ] as DentistryConfig | undefined;
 
-  const equipmentPictures: Dentistry[] = dentistryConfig?.equipment || [];
+  const equipmentPictures: Dentistry[] = DentistryConfig?.equipment || [];
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-[40]">
+      <div className="flex flex-col items-start mb-[40px] text-justify">
         <p>
           Из всех заболеваний, которым подвержены домашние животные, на проблемы
           зубов и полости рта владельцы, как правило, обращают внимание только в
@@ -40,20 +35,42 @@ const Dentistry = () => {
         <p>
           Санация полости рта у собак и кошек подразумевает обнаружение и
           своевременный индивидуальный курс лечения всех заболеваний ротовой
-          полости у животного. Сюда можно отнести в первую очередь зубной камень
-          у собак и кошек, зубной налет, неприятный запах из пасти, воспаление
-          десен, нежизнеспособные, разрушенные зубы и многие другие проблемы.
+          полости у животного.
         </p>
-        <p>
-          Ваш питомец нуждается в стоматологической помощи в том случае, если
-          имеется наличие красной полосы вдоль линии десен, появляется
-          неприятный запах изо рта, происходит полный отказ от корма, меняется
-          интенсивность жевания или животное делает это с большой осторожностью.
-          Тревожными симптомами являются также: невозможность увидеть зубную
-          эмаль из-за зубного камня, сломанный зуб, изменение цвета зубов,
-          потеря зубов, отеки в лицевой области, отеки или разрастание мягких
-          тканей в ротовой полости и масса других явных и скрытых признаков.
-        </p>
+        <h3 className="self-center mb-[20px]">Сюда можно отнести:</h3>
+        <ol className="list-decimal list-inside mb-[20px]">
+          <li>зубной камень у собак и кошек</li>
+          <li>зубной налет</li>
+          <li>неприятный запах из пасти</li>
+          <li>воспаление десен</li>
+          <li>нежизнеспособные, разрушенные зубы и многие другие проблемы.</li>
+        </ol>
+        <h3 className="self-center mb-[20px]">
+          Ваш питомец нуждается в стоматологической помощи в том случае, если:
+        </h3>
+        <ul className="list-disc list-inside mb-[20px]">
+          <li>Имеется наличие красной полосы вдоль линии десен.</li>
+          <li>Появляется неприятный запах изо рта.</li>
+          <li>Происходит полный отказ от корма.</li>
+          <li>
+            Меняется интенсивность жевания или животное делает это с большой
+            осторожностью.
+          </li>
+        </ul>
+        <h3 className="self-center mb-[20px]">
+          Тревожными симптомами являются также:
+        </h3>
+        <ul className="list-disc list-inside mb-[20px]">
+          <li>Невозможность увидеть зубную эмаль из-за зубного камня.</li>
+          <li>Сломанный зуб.</li>
+          <li>Изменение цвета зубов.</li>
+          <li>Потеря зубов.</li>
+          <li>Отеки в лицевой области.</li>
+          <li>
+            Отеки или разрастание мягких тканей в ротовой полости и масса других
+            явных и скрытых признаков.
+          </li>
+        </ul>
       </div>
       <h2 className="mb-[40]">Наше оборудование:</h2>
       <div className="flex flex-col items-center gap-[40px]">
@@ -62,8 +79,9 @@ const Dentistry = () => {
             <Image
               src={picture.src}
               alt={picture.alt}
-              width={462}
-              height={462}
+              width={1000}
+              height={1000}
+              className="w-[275px] h-[305px] md:w-[462px] md:h-[462px]"
             />
             <p>{picture.name}</p>
           </div>
@@ -71,6 +89,4 @@ const Dentistry = () => {
       </div>
     </div>
   );
-};
-
-export default Dentistry;
+}

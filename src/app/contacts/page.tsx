@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 
-const Contacts = () => {
+export default function Contacts() {
   return (
     <div className="flex flex-col items-center">
       <span className="text-[16px] lg:text-[24px] mb-[15] lg:mb-[25px]">
@@ -27,9 +25,13 @@ const Contacts = () => {
           тел: 22-45-15, 89108602233
         </span>
       </div>
-      <Image src="/map.png" alt="Клиника" width={722} height={380} />
+      <Image
+        src="/map.png"
+        alt="Клиника"
+        width={1000}
+        height={1000}
+        className="w-[310px] h-[155] md:w-[722] md:h-[380px]"
+      />
     </div>
   );
-};
-
-export default Contacts;
+}

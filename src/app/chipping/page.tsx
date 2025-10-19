@@ -1,8 +1,6 @@
-"use client";
-
-const Chipping = () => {
+export default function Chipping() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-justify">
       <p className="mb-[20px]">
         Не секрет, что у каждого вакцинированного животного есть ветеринарный
         паспорт, куда заносятся данные о прививках и других профилактических
@@ -52,6 +50,4 @@ const Chipping = () => {
       </p>
     </div>
   );
-};
-
-export default Chipping;
+}

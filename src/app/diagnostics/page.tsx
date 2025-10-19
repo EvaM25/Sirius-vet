@@ -1,8 +1,5 @@
-"use client";
-
 import { siteConfig } from "@/src/config/site.config";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 interface Diagnostics {
   src: string;
@@ -15,18 +12,16 @@ interface DiagnosticsConfig {
   pictures?: Diagnostics[];
 }
 
-const Diagnostics = () => {
-  const pathname = usePathname();
-
-  const diagnosticsConfig = siteConfig.pagesContent[
-    pathname as keyof typeof siteConfig.pagesContent
+export default function Diagnostics() {
+  const DiagnosticsConfig = siteConfig.pagesContent[
+    "/diagnostics" as keyof typeof siteConfig.pagesContent
   ] as DiagnosticsConfig | undefined;
 
-  const equipmentPictures: Diagnostics[] = diagnosticsConfig?.equipment || [];
-  const diagnosticsPictures: Diagnostics[] = diagnosticsConfig?.pictures || [];
+  const equipmentPictures: Diagnostics[] = DiagnosticsConfig?.equipment || [];
+  const diagnosticsPictures: Diagnostics[] = DiagnosticsConfig?.pictures || [];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-justify">
       <div className="mb-[20px]">
         <p>
           Лабораторная диагностика помогает ветеринарному врачу поставить
@@ -95,10 +90,10 @@ const Diagnostics = () => {
       <div className="mb-[20px]">
         <p>
           Перед сдачей общего планового анализа крови необходимо выдержать
-          голодную диету животному в течение 3-х часов, а перед проведением
-          биохимического анализа – в течение 10-12 часов. Воду питомцу давать
-          можно. С момента получения образца мочи до его доставки вет
-          специалисту должно пройти не более четырёх часов.
+          <strong>голодную диету животному</strong> в течение 3-х часов, а перед
+          проведением биохимического анализа – в течение 10-12 часов. Воду
+          питомцу давать можно. С момента получения образца мочи до его доставки
+          вет специалисту должно пройти <strong>не более четырёх часов</strong>.
         </p>
         <p>
           В нашей клинике функционирует лабораторное подразделение ,
@@ -112,9 +107,9 @@ const Diagnostics = () => {
             <Image
               src={picture.src}
               alt={picture.alt}
-              width={300}
-              height={300}
-              className="mb-[20px]"
+              width={1000}
+              height={1000}
+              className="w-[300px] h-[300px] md:w-[462px] md:h-[434px] mb-[20px]"
             />
             <p>{picture.name}</p>
           </div>
@@ -129,8 +124,9 @@ const Diagnostics = () => {
             <Image
               src={picture.src}
               alt={picture.alt}
-              width={300}
-              height={300}
+              width={1000}
+              height={1000}
+              className="w-[275px] h-[310px] md:w-[462px] md:h-[406px]"
             />
             <p>{picture.name}</p>
           </div>
@@ -138,6 +134,4 @@ const Diagnostics = () => {
       </div>
     </div>
   );
-};
-
-export default Diagnostics;
+}

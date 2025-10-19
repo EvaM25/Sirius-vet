@@ -1,23 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "../providers/provider";
-import Header from "../components/UI/header";
+import Header from "../components/ui/header";
 import { siteConfig } from "../config/site.config";
-import Hero from "../components/UI/hero";
-import Footer from "../components/UI/footer";
-import { layoutConfig } from "../config/layout.config";
-import Title from "../components/UI/title";
+import Hero from "../components/ui/hero";
+import Footer from "../components/ui/footer";
+import Title from "../components/ui/title";
 
 const OpenSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
 });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -36,7 +30,7 @@ export default function RootLayout({
           <Header />
           <Hero />
           <main
-            className={`bg-white flex flex-col  mx-auto mb-[50] px-[40px] justify-center items-center max-w-[1024]`}
+            className={`bg-white flex flex-col  mx-auto mb-[50px] px-[40px] justify-center items-center max-w-[1024px]`}
           >
             <Title />
             {children}

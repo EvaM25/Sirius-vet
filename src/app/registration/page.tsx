@@ -1,8 +1,6 @@
-"use client";
-
-const Registration = () => {
+export default function Registration() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-justify">
       <h2 className="mb-[42px]">Оформление ветеринарного паспорта.</h2>
       <p>
         <strong>Ветеринарный паспорт для собак и кошек</strong> — международный
@@ -30,6 +28,4 @@ const Registration = () => {
       </p>
     </div>
   );
-};
-
-export default Registration;
+}

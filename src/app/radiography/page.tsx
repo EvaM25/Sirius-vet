@@ -1,8 +1,5 @@
-"use client";
-
 import { siteConfig } from "@/src/config/site.config";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 interface Radiography {
   src: string;
@@ -13,18 +10,16 @@ interface RadiographyConfig {
   pictures?: Radiography[];
 }
 
-const Radiography = () => {
-  const pathname = usePathname();
-
-  const radiographyConfig = siteConfig.pagesContent[
-    pathname as keyof typeof siteConfig.pagesContent
+export default function Radiography() {
+  const RadiographyConfig = siteConfig.pagesContent[
+    "/radiography" as keyof typeof siteConfig.pagesContent
   ] as RadiographyConfig | undefined;
 
-  const equipmentPictures: Radiography[] = radiographyConfig?.pictures || [];
+  const equipmentPictures: Radiography[] = RadiographyConfig?.pictures || [];
 
   return (
     <div>
-      <div className="mb-[40px]">
+      <div className="mb-[40px] text-justify">
         <p>
           В нашей клинике работает лицензированный кабинет цифровой
           рентгенографии.
@@ -79,14 +74,13 @@ const Radiography = () => {
             <Image
               src={picture.src}
               alt={picture.alt}
-              width={462}
-              height={462}
+              width={1000}
+              height={1000}
+              className="w-[275px] h-[310px] md:w-[462px] md:h-[562px]"
             />
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default Radiography;
+}

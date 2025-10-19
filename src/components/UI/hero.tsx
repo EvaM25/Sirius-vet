@@ -1,23 +1,20 @@
-"use client";
-
 import Image from "next/image";
 
 export default function Hero() {
   return (
     <section
-      className={` bg-gradient-to-r from-teal-500 to-blue-400 mb-[50] pb-[45] text-white items-center justify-between`}
-      // style={{ height: layoutConfig.heroHeight }}
+      className={` bg-gradient-to-r from-teal-500 to-blue-400 mb-[50px] pb-[45px] text-white items-center justify-between`}
     >
-      <div className="flex justify-between items-center  xl:max-w-[1240] lg:max-w-[944] md:max-w-[688] relative mx-auto">
-        <div className="flex flex-col items-center w-[353] ">
+      <div className="flex justify-between items-center  xl:max-w-[1240px] lg:max-w-[944px] md:max-w-[688px] relative mx-auto">
+        <div className="flex flex-col items-center w-[353px] ">
           <Image
             src="/clinic.png"
             alt="sirius-vet"
-            width={126}
-            height={166}
-            className=" mb-[15] md:mb-[25] md:w-[166px]"
+            width={1000}
+            height={1000}
+            className="mb-[15px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
           />
-          <h2 className="mb-[5] flex flex-col items-center">
+          <h2 className="mb-[5px] flex flex-col items-center">
             <span className="font-semibold text-[11px] xl:text-[24px] lg:text-[20px] md:text-[16px]">
               КЛИНИКА
             </span>
@@ -25,16 +22,16 @@ export default function Hero() {
               ВЕТЕРИНАРНОЙ МЕДИЦИНЫ
             </span>
           </h2>
-          <span className="mb-[5] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ооо “Сириус-Вет”
           </span>
-          <span className="mb-[5] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             г.Калуга
           </span>
-          <span className="mb-[5] font-semibold lg:text-[12px] md:text-[12px] text-[10px]">
+          <span className="mb-[5px] font-semibold lg:text-[12px] md:text-[12px] text-[10px]">
             КРУГЛОСУТОЧНО
           </span>
-          <span className="mb-[10] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="mb-[10px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ул.Баррикад , д.128
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
@@ -46,39 +43,39 @@ export default function Hero() {
           <Image
             src="/hero-1.png"
             alt="cat-photo"
-            width={220}
-            height={222}
-            className="absolute top-[130] left-[420] z-[10]"
+            width={1000}
+            height={1000}
+            className="absolute w-[240px] h-[222px] top-[130px] left-[420px] z-[10]"
           />
           <Image
             src="/hero-2.png"
             alt="vet-photo"
-            width={316}
-            height={282}
-            className="absolute top-[5] right-[380] z-[5]"
+            width={1000}
+            height={1000}
+            className="absolute w-[316px] h-[290px] top-[5px] right-[380px] z-[5]"
           />
         </div>
 
-        <div className="flex flex-col items-center w-[353]">
+        <div className="flex flex-col items-center w-[353px]">
           <Image
             src="/store.png"
             alt="vet-store"
-            width={126}
-            height={166}
-            className="mb-[15] md:mb-[37] md:w-[166px]"
+            width={1000}
+            height={1000}
+            className="mb-[15px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
           />
-          <h2 className="mb-[7] lg:mb-[25] md:mb-[12]">
+          <h2 className="mb-[7px] lg:mb-[25px] md:mb-[12px]">
             <span className="font-semibold xl:text-[24px] lg:text-[20px] md:text-[16px] text-[11px]">
               ВЕТЕРИНАРНАЯ АПТЕКА
             </span>
           </h2>
-          <span className="mb-[5] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ооо “Живая планета”
           </span>
-          <span className="lg:mb-[30] mb-[20] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="lg:mb-[30px] mb-[20px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             г.Калуга
           </span>
-          <span className="mb-[10] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="mb-[10px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ул.Баррикад , д.128
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">

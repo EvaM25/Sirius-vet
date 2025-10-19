@@ -1,8 +1,5 @@
-"use client";
-
 import { siteConfig } from "@/src/config/site.config";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 interface StaffMember {
   src: string;
@@ -18,11 +15,9 @@ interface StaffPageConfig {
   };
 }
 
-const Staff = () => {
-  const pathname = usePathname();
-
+export default function Staff() {
   const StaffPageConfig = siteConfig.pagesContent[
-    pathname as keyof typeof siteConfig.pagesContent
+    "/staff" as keyof typeof siteConfig.pagesContent
   ] as StaffPageConfig | undefined;
 
   const doctors: StaffMember[] = StaffPageConfig?.staffMembers?.doctors || [];
@@ -33,48 +28,54 @@ const Staff = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
-        <h2 className="mb-[40]">Клиника</h2>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40]">
+        <h2 className="mb-[40px]">Клиника</h2>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40px]">
           {doctors.map((doctors, index) => (
             <div key={index} className="flex flex-col items-center">
               <Image
                 src={doctors.src}
                 alt={doctors.alt}
-                width={452}
-                height={593}
-                className="mb-[10px]"
+                width={1000}
+                height={1000}
+                className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
               />
-              <h3>{doctors.name}</h3>
+              <h4 className="font-bold text-[14px] md:text-[18px]">
+                {doctors.name}
+              </h4>
             </div>
           ))}
         </div>
-        <h2 className="mb-[40]">Регистратура</h2>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40]">
+        <h2 className="mb-[40px]">Регистратура</h2>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40px]">
           {registration.map((registration, index) => (
             <div key={index} className="flex flex-col items-center">
               <Image
                 src={registration.src}
                 alt={registration.alt}
-                width={452}
-                height={593}
-                className="mb-[10px]"
+                width={1000}
+                height={1000}
+                className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
               />
-              <h3>{registration.name}</h3>
+              <h4 className="font-bold text-[14px] md:text-[18px]">
+                {registration.name}
+              </h4>
             </div>
           ))}
         </div>
-        <h2 className="mb-[40]">Ветеринарная аптека</h2>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40]">
+        <h2 className="mb-[40px]">Ветеринарная аптека</h2>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-[40px] mb-[40px]">
           {pharm.map((pharm, index) => (
             <div key={index} className="flex flex-col items-center">
               <Image
                 src={pharm.src}
                 alt={pharm.alt}
-                width={452}
-                height={593}
-                className="mb-[10px]"
+                width={1000}
+                height={1000}
+                className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
               />
-              <h3>{pharm.name}</h3>
+              <h4 className="font-bold text-[14px] md:text-[18px]">
+                {pharm.name}
+              </h4>
             </div>
           ))}
         </div>
@@ -85,6 +86,4 @@ const Staff = () => {
       </span>
     </div>
   );
-};
-
-export default Staff;
+}

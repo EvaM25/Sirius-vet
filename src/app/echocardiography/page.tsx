@@ -1,13 +1,11 @@
-import PageContent from "@/src/components/UI/page-content";
-
-const Echocardiography = () => {
+export default function Echocardiography() {
   return (
-    <div className="flex flex-col items-center ">
-      <div>
+    <div className="flex flex-col items-center text-justify">
+      <div className="mb-[20px]">
         <p>
-          Эхокардиография (ЭХО КГ) - это диагностическая процедура, которая
-          использует ультразвуковые волны для создания изображений и оценки
-          структуры и функции сердца животных.
+          <strong>Эхокардиография (ЭХО КГ)</strong> - это диагностическая
+          процедура, которая использует ультразвуковые волны для создания
+          изображений и оценки структуры и функции сердца животных.
         </p>
         <p>
           Это исследование позволяет оценить анатомическое строение и
@@ -17,9 +15,11 @@ const Echocardiography = () => {
           болезни, которые невозможно определить другими методами.
         </p>
       </div>
-      <div>
-        <p>В каких случаях рекомендуется пройти ЭХОкг:</p>
-        <ul className="list-disc list-inside">
+      <div className="flex flex-col items-start">
+        <h3 className="self-center mb-[20px]">
+          В каких случаях рекомендуется пройти ЭХОкг:
+        </h3>
+        <ol className="list-decimal list-inside">
           <li>Ваш питомец готовится к операции под общей анестезией;</li>
           <li>
             Обнаружена тревожная симптоматика – вялость, одышка, пониженная
@@ -29,17 +29,34 @@ const Echocardiography = () => {
             На первичном осмотре при прослушивании отмечены подозрительные шумы
             в сердце;
           </li>
-          <li>
+          <li className="mb-[20px]">
             Ваш питомец входит в группу риска по сердечно-сосудистым
-            заболеваниям. Это могут быть пожилые животные, животные, перенесшие
-            серьезные болезни или травмы, представители некоторых пород (среди
-            кошек – мейн-кун, шотландская, британская, рэгдолл, среди собак –
-            английский бульдог, боксер, йоркширский терьер, дог и другие).
+            заболеваниям.
+            <div className="flex flex-col items-center">
+              <p>
+                <strong className="self-center">Факторы риска включают:</strong>
+              </p>
+              <ul className="list-disc list-inside">
+                <li>Пожилые животные</li>
+                <li>Животные, перенесшие серьезные болезни или травмы</li>
+                <li>
+                  <strong>Представители некоторых пород:</strong>
+                  <ul>
+                    <li>
+                      <span className="font-semibold">Кошки:</span> мейн-кун,
+                      шотландская, британская, рэгдолл.
+                    </li>
+                    <li>
+                      <span className="font-semibold">Собаки:</span> английский
+                      бульдог, боксер, йоркширский терьер, дог и другие.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   );
-};
-
-export default Echocardiography;
+}
