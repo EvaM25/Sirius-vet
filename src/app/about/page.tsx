@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex flex-col items-start text-justify">
+    <div className="flex flex-col items-start">
       <p>
         Наша клиника носит имя ярчайшей звезды ночного неба -
         <strong>"Сириус"</strong>. Египтяне считали эту звезду божественным

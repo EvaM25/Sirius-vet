@@ -21,7 +21,7 @@ export default function Diagnostics() {
   const diagnosticsPictures: Diagnostics[] = DiagnosticsConfig?.pictures || [];
 
   return (
-    <div className="flex flex-col items-center text-justify">
+    <div className="flex flex-col items-center">
       <div className="mb-[20px]">
         <p>
           Лабораторная диагностика помогает ветеринарному врачу поставить
@@ -84,12 +84,12 @@ export default function Diagnostics() {
           выявить грибковые и паразитарные поражения кожи.
         </p>
       </div>
-      <h3 className="mb-[20px]">
+      <h3 className="mb-[20px] text-center">
         Рекомендации по подготовке животного к сдаче анализов
       </h3>
       <div className="mb-[20px]">
         <p>
-          Перед сдачей общего планового анализа крови необходимо выдержать
+          Перед сдачей общего планового анализа крови необходимо выдержать{" "}
           <strong>голодную диету животному</strong> в течение 3-х часов, а перед
           проведением биохимического анализа – в течение 10-12 часов. Воду
           питомцу давать можно. С момента получения образца мочи до его доставки
@@ -115,7 +115,7 @@ export default function Diagnostics() {
           </div>
         ))}
       </div>
-      <h3 className="mb-[20px]">
+      <h3 className="mb-[20px] text-center">
         А также весь спектр сопутствующего оборудования
       </h3>
       <div className="flex flex-col items-center md:flex-row gap-[20px]">

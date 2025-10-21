@@ -1,6 +1,6 @@
 export default function Echocardiography() {
   return (
-    <div className="flex flex-col items-center text-justify">
+    <div className="flex flex-col items-center">
       <div className="mb-[20px]">
         <p>
           <strong>Эхокардиография (ЭХО КГ)</strong> - это диагностическая
@@ -16,7 +16,7 @@ export default function Echocardiography() {
         </p>
       </div>
       <div className="flex flex-col items-start">
-        <h3 className="self-center mb-[20px]">
+        <h3 className="text-center mb-[20px]">
           В каких случаях рекомендуется пройти ЭХОкг:
         </h3>
         <ol className="list-decimal list-inside">

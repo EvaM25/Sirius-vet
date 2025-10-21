@@ -1,7 +1,9 @@
 export default function Registration() {
   return (
-    <div className="flex flex-col items-center text-justify">
-      <h2 className="mb-[42px]">Оформление ветеринарного паспорта.</h2>
+    <div className="flex flex-col items-center">
+      <h2 className="mb-[42px] text-center">
+        Оформление ветеринарного паспорта
+      </h2>
       <p>
         <strong>Ветеринарный паспорт для собак и кошек</strong> — международный
         ветеринарный документ, содержащий информацию о животном и контактную

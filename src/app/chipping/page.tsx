@@ -1,6 +1,6 @@
 export default function Chipping() {
   return (
-    <div className="flex flex-col items-center text-justify">
+    <div className="flex flex-col items-center">
       <p className="mb-[20px]">
         Не секрет, что у каждого вакцинированного животного есть ветеринарный
         паспорт, куда заносятся данные о прививках и других профилактических

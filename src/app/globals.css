@@ -45,6 +45,7 @@ p {
   margin-bottom: 10px;
   text-wrap: pretty;
   color: rgb(47, 47, 47);
+  text-align: justify;
 }
 ul {
   color: rgb(47, 47, 47);
@@ -62,4 +63,19 @@ li {
 
 img {
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  ul {
+    font-size: 14px;
+  }
+  ol {
+    font-size: 14px;
+  }
 }

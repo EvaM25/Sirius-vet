@@ -30,7 +30,7 @@ export default function Contacts() {
         alt="Клиника"
         width={1000}
         height={1000}
-        className="w-[310px] h-[155] md:w-[722] md:h-[380px]"
+        className="w-[285px] h-[148] md:w-[722] md:h-[380px]"
       />
     </div>
   );

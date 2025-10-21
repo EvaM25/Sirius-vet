@@ -1,7 +1,6 @@
 "use client";
 
 import { Navbar, NavbarContent, NavbarItem } from "@heroui/navbar";
-
 import { siteConfig } from "@/src/config/site.config";
 import { usePathname } from "next/navigation";
 import {
@@ -13,7 +12,8 @@ import {
 } from "@heroui/react";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Hamburger from "hamburger-react";
 
 export const ChevronDown = ({ fill, size, height, width, ...props }) => {
   return (
@@ -40,11 +40,27 @@ export const ChevronDown = ({ fill, size, height, width, ...props }) => {
 export default function Header() {
   const pathname = usePathname();
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScrollLock = () => {
+      if (isOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+    };
+
+    handleScrollLock();
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
 
   const icon = <ChevronDown fill="currentColor" size={16} />;
 
@@ -117,78 +133,34 @@ export default function Header() {
   };
 
   return (
-    <Navbar className=" py-0 lg:py-[40] bg-gradient-to-r from-teal-500 to-blue-400 relative border-none">
+    <Navbar className=" py-0 lg:py-[38px] bg-gradient-to-r from-teal-500 to-blue-400 relative border-none">
       <NavbarContent
-        className="hidden lg:flex gap-4 max-w-[1024] xl:max-w-[1360] mx-auto"
+        className="hidden bg-transparent lg:flex gap-4 max-w-[1024px] xl:max-w-[1360px] mx-auto"
         justify="center"
       >
         {getNavItems()}
       </NavbarContent>
-      <div className="block absolute right-[20] top-[20] lg:hidden">
-        <button
-          onClick={toggleMenu}
-          className="text-white hover:text-blue-200 focus:outline-none will-change-transform transition-transform duration-300 ease-in-out"
-        >
-          <svg
-            className="fill-current"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            style={{ display: "block" }}
-          >
-            {isOpen ? (
-              <>
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  d="M6 18L18 6"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  d="M6 6L18 18"
-                />
-              </>
-            ) : (
-              <>
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  d="M4 6h16"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  d="M4 12h16"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  d="M4 18h16"
-                />
-              </>
-            )}
-          </svg>
-        </button>
+      <div className="block absolute right-[20px] top-[10px] lg:hidden z-[100]">
+        <Hamburger
+          toggled={isOpen}
+          toggle={toggleMenu}
+          size={20}
+          direction="right"
+          duration={0.3}
+          distance="lg"
+          color="#fff"
+          easing="ease-in"
+        />
       </div>
-      {isOpen && (
-        <div
-          className={`lg:hidden fixed top-full left-0 w-full h-screen bg-gradient-to-r from-teal-500 to-blue-400 text-white 
-                      py-4 transform transition-transform duration-300 ease-in-out
-             ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-                    z-50`}
-        >
-          <div className="h-screen flex flex-col items-center gap-[30] space-y-4">
-            {getNavItems()}
-          </div>
+      <div
+        className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-r from-teal-500 to-blue-400 text-white 
+                      py-[45px] transform transition-transform -translate-x-full duration-300 ease-in-out z-50
+             ${isOpen ? "translate-x-0" : ""}`}
+      >
+        <div className="h-screen top-0 flex flex-col items-center gap-[20px]">
+          {getNavItems()}
         </div>
-      )}
+      </div>
     </Navbar>
   );
 }

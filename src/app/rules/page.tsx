@@ -1,7 +1,7 @@
 export default function Rules() {
   return (
-    <div className="flex flex-col items-center text-justify">
-      <h2 className="mb-[40px]">Уважаемые владельцы!</h2>
+    <div className="flex flex-col items-center">
+      <h2 className="mb-[40px] text-center">Уважаемые владельцы!</h2>
       <div className="mb-[40px] ">
         <p>
           Уважайте чувства и эмоции окружающих вас людей и животных. Правила
@@ -29,8 +29,10 @@ export default function Rules() {
           если бегает по клинике без поводка.
         </p>
       </div>
-      <h2 className="mb-[40px]">Правила приема в ветеринарной клинике</h2>
-      <div className="px-4 md:px-0">
+      <h2 className="mb-[40px] text-center">
+        Правила приема в ветеринарной клинике
+      </h2>
+      <div className="px-0">
         <ol className="list-decimal list-inside space-y-6 mb-[10px] ">
           <li>
             При оказании платных ветеринарных услуг между владельцем и клиникой
@@ -159,7 +161,7 @@ export default function Rules() {
         заболеванием, а также при поступлении диких животных врач обязан
         действовать в соответствии с Ветеринарным законодательством.
       </p>
-      <h3 className="mb-[10px]">Уважаемые владельцы животных!</h3>
+      <h3 className="mb-[10px] text-center">Уважаемые владельцы животных!</h3>
       <p>
         Организация работы нашей клиники построена, прежде всего для
         качественного лечения животных. Главной и самой основной задачей нашей

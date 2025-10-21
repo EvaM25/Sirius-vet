@@ -20,7 +20,7 @@ export default function Dentistry() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col items-start mb-[40px] text-justify">
+      <div className="flex flex-col items-start mb-[40px]">
         <p>
           Из всех заболеваний, которым подвержены домашние животные, на проблемы
           зубов и полости рта владельцы, как правило, обращают внимание только в

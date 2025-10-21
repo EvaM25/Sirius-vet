@@ -1,6 +1,6 @@
 export default function Therapy() {
   return (
-    <div className="flex flex-col items-start text-justify">
+    <div className="flex flex-col items-start">
       <p>
         <strong>Терапия</strong> – это диагностика и лечение заболеваний
         животных без хирургического вмешательства.

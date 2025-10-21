@@ -19,7 +19,7 @@ export default function Radiography() {
 
   return (
     <div>
-      <div className="mb-[40px] text-justify">
+      <div className="mb-[40px]">
         <p>
           В нашей клинике работает лицензированный кабинет цифровой
           рентгенографии.

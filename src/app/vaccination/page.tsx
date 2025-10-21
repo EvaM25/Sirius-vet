@@ -1,7 +1,7 @@
 export default function Vaccination() {
   return (
-    <div className="flex flex-col items-center text-justify">
-      <h2 className="mb-[40px]">
+    <div className="flex flex-col items-center ">
+      <h2 className="mb-[40px] text-center">
         В нашей ветеринарной клинике работает прививочный кабинет!
       </h2>
       <p>

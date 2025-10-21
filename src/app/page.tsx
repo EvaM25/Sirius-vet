@@ -28,11 +28,11 @@ export default function Home() {
         alt="Главное фото"
         width={1000}
         height={1000}
-        className="mb-[52px] w-[562px] h-[523px]"
+        className="mb-[52px] w-[310px] h-[275px] md:w-[562px] md:h-[523px]"
       />
       <div className="mb-[40px] text-justify">
         <blockquote className=" italic text-blue-900">
-          <p>"Ты навсегда в ответе за всех, кого приручил"</p>
+          <p>"Ты навсегда в ответе за всех, кого приручил."</p>
         </blockquote>
         <p>Слова Антуана де Сент Экзюпери никогда не теряют актуальность.</p>
         <p>

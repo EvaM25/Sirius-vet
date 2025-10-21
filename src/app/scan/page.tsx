@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Scan() {
   return (
-    <div className="flex flex-col items-center text-justify">
+    <div className="flex flex-col items-center">
       <p className="mb-[20px]">
         -один из самых распространенных и доступных методов объективной
         визуализации внутренних органов в современной ветеринарии. С помощью
         ультразвука можно получить изображение органов, оценку их формы,
         строения и функции.
       </p>
-      <h3 className="mb-[20px]">
+      <h3 className="mb-[20px] text-center">
         Возможности и значение ультразвукового исследования
       </h3>
       <div className="mb-[20px]">
@@ -35,7 +35,9 @@ export default function Scan() {
         <li>Метод доступнее и дешевле других визуальных методов.</li>
         <li>Возможность исследования в реальном времени.</li>
       </ul>
-      <h3 className="mb-[20px]">Как проводится ультразвуковое исследование?</h3>
+      <h3 className="mb-[20px] text-center">
+        Как проводится ультразвуковое исследование?
+      </h3>
       <p className="mb-[20px]">
         В нашей клинике ультразвуковые исследования (УЗИ и ЭХОкг) проводятся на
         стационарной цветной цифровой ультразвуковой диагностической системе
@@ -46,9 +48,9 @@ export default function Scan() {
         alt="Chison Qbit7"
         width={1000}
         height={1000}
-        className="mb-[20px] h-[585px] w-[320px] md:w-[532px] md:h-[932px]"
+        className="mb-[20px] h-[525px] w-[306px] md:w-[532px] md:h-[932px]"
       />
-      <div className="mb-[20px] text-justify">
+      <div className="mb-[20px]">
         <p>
           Рекомендуется проводить исследование брюшной полости на пустой желудок
           (не кормить 8-10 часов). В течении дня перед исследованием мы советуем
@@ -67,7 +69,7 @@ export default function Scan() {
           качество визуализации и расширение возможности метода.
         </p>
       </div>
-      <h3 className="mb-[20px]">
+      <h3 className="mb-[20px] text-center">
         Ультразвуковое исследование при беременности.
       </h3>
       <p>

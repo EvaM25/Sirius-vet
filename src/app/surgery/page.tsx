@@ -20,7 +20,7 @@ export default function Surgery() {
   const equipmentPictures: Surgery[] = SurgeryConfig?.equipment || [];
 
   return (
-    <div className="flex flex-col items-center text-justify">
+    <div className="flex flex-col items-center">
       <div className="mb-[40px]">
         <p>
           <strong>Хирургия</strong> — область ветеринарной медицины, изучающая
@@ -149,7 +149,7 @@ export default function Surgery() {
               alt={picture.alt}
               width={1000}
               height={1000}
-              className="w-[662px] h-[623px]"
+              className="w-[307px] h-[430px] md:w-[662px] md:h-[623px]"
             />
           </div>
         ))}
