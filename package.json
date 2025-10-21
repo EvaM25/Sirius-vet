@@ -10,7 +10,6 @@
   "dependencies": {
     "@heroui/navbar": "^2.2.24",
     "@heroui/react": "^2.8.4",
-    "@types/dompurify": "^3.0.5",
     "dompurify": "^3.2.7",
     "hamburger-react": "^2.5.2",
     "html-react-parser": "^5.2.6",
