@@ -15,7 +15,21 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 
-export const ChevronDown = ({ fill, size, height, width, ...props }) => {
+interface ChevronDownProps {
+  fill?: string;
+  size?: number;
+  height?: number;
+  width?: number;
+  [key: string]: any;
+}
+
+export const ChevronDown: React.FC<ChevronDownProps> = ({
+  fill,
+  size,
+  height,
+  width,
+  ...props
+}) => {
   return (
     <svg
       fill="none"

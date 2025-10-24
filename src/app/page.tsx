@@ -1,26 +1,6 @@
-"use client";
-
 import Image from "next/image";
-import { siteConfig } from "../config/site.config";
-import { usePathname } from "next/navigation";
-
-interface Clinic {
-  src: string;
-  alt: string;
-}
-
-interface PicturesConfig {
-  pictures?: Clinic[];
-}
 
 export default function Home() {
-  const pathname = usePathname();
-  const MainPageConfig = siteConfig.pagesContent[
-    pathname as keyof typeof siteConfig.pagesContent
-  ] as PicturesConfig | undefined;
-
-  const mainPictures: Clinic[] = MainPageConfig?.pictures || [];
-
   return (
     <div className="flex flex-col items-center">
       <Image
@@ -71,18 +51,6 @@ export default function Home() {
         <source src="/videos/sirius-vet.mp4" type="video/mp4" />
         <source src="/videos/sirius-vet.webm" type="video/webm" />
       </video>
-      {/* <div className="grid grid-cols-2 gap-[40px] mb-[40]">
-        {mainPictures.map((picture, index) => (
-          <div key={index}>
-            <Image
-              src={picture.src}
-              alt={picture.alt}
-              width={452}
-              height={300}
-            />
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 }

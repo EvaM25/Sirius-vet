@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "../providers/provider";
-import Header from "../components/ui/header";
+import Header from "../components/UI/header";
 import { siteConfig } from "../config/site.config";
-import Hero from "../components/ui/hero";
-import Footer from "../components/ui/footer";
-import Title from "../components/ui/title";
+import Hero from "../components/UI/hero";
+import Footer from "../components/UI/footer";
+import Title from "../components/UI/title";
 
 const OpenSans = Open_Sans({
   variable: "--font-open-sans",

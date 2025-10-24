@@ -4,8 +4,8 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const ChippingLayout: FC<IProps> = ({ children }) => {
+const AboutLayout: FC<IProps> = ({ children }) => {
   return <section>{children}</section>;
 };
 
-export default ChippingLayout;
+export default AboutLayout;
