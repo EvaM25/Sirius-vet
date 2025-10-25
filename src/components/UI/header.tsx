@@ -12,7 +12,7 @@ import {
 } from "@heroui/react";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Hamburger from "hamburger-react";
 
 interface ChevronDownProps {
@@ -155,7 +155,7 @@ export default function Header() {
                       py-[45px] transform transition-transform -translate-x-full duration-300 ease-in-out z-50
              ${isOpen ? "translate-x-0" : ""}`}
       >
-        <div className="h-screen top-0 flex flex-col items-center gap-[20px]">
+        <div className="h-screen top-0 flex flex-col items-center gap-[10px]">
           {getNavItems()}
         </div>
       </div>
