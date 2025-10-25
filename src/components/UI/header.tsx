@@ -60,22 +60,6 @@ export default function Header() {
     setOpen(!isOpen);
   };
 
-  useEffect(() => {
-    const handleScrollLock = () => {
-      if (isOpen) {
-        document.body.classList.add("overflow-hidden");
-      } else {
-        document.body.classList.remove("overflow-hidden");
-      }
-    };
-
-    handleScrollLock();
-
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [isOpen]);
-
   const icon = <ChevronDown fill="currentColor" size={16} />;
 
   const getNavItems = () => {
