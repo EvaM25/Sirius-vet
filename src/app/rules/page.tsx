@@ -33,7 +33,7 @@ export default function Rules() {
         Правила приема в ветеринарной клинике
       </h2>
       <div className="px-0">
-        <ol className="list-decimal list-inside space-y-6 mb-[10px] ">
+        <ol className="list-decimal list-inside space-y-6 mb-[10px] text-justify ">
           <li>
             При оказании платных ветеринарных услуг между владельцем и клиникой
             заключается договор.{" "}
