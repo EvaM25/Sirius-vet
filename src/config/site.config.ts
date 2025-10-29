@@ -150,7 +150,7 @@ export const siteConfig = {
             name: "Жукова Наталья Евгеньевна",
           },
           {
-            src: "/staff/svirina.png",
+            src: "/staff/Svirina.png",
             alt: "Свирина Галина Леонидовна",
             name: "Свирина Галина Леонидовна",
           },
