@@ -85,7 +85,7 @@ export default function Hero() {
             ул.Баррикад , д.128
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
-            ТЕЛ. +7-(4842)-22-01-75
+            ТЕЛ. +7-(4842)-22-45-15
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
             +7-(910)-860-22-33
