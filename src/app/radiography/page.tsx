@@ -1,5 +1,4 @@
 import { siteConfig } from "@/src/config/site.config";
-import Image from "next/image";
 
 interface Radiography {
   src: string;
@@ -68,7 +67,7 @@ export default function Radiography() {
           рентгенологического исследования.
         </p>
       </div>
-      <div className="flex flex-col items-center gap-[40px]">
+      {/* <div className="flex flex-col items-center gap-[40px]">
         {equipmentPictures.map((picture, index) => (
           <div key={index}>
             <Image
@@ -80,7 +79,7 @@ export default function Radiography() {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

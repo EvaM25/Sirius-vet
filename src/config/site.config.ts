@@ -27,6 +27,7 @@ export const siteConfig = {
       label: "Прейскурант",
       target: "_blank",
     },
+    { href: "/store", label: "Ветеринарная аптека" },
   ],
 
   pagesContent: {
@@ -171,6 +172,16 @@ export const siteConfig = {
         ],
         pharm: [
           {
+            src: "/staff/korneeva.png",
+            alt: "Корнеева Татьяна Михайловна",
+            name: "Корнеева Татьяна Михайловна",
+          },
+          {
+            src: "/staff/frolova.png",
+            alt: "Фролова Галина Сергеевна",
+            name: "Фролова Галина Сергеевна",
+          },
+          {
             src: "/staff/sadykova.png",
             alt: "Садыкова Ольга Вячеславовна",
             name: "Садыкова Ольга Вячеславовна",
@@ -261,20 +272,20 @@ export const siteConfig = {
     },
     "/radiography": {
       title: "Цифровая рентгенография",
-      pictures: [
-        {
-          src: "/equipment/radiography.png",
-          alt: "ORANGE-1040HF, EcoRay",
-        },
-        {
-          src: "/equipment/radiography-3.png",
-          alt: "ORANGE-1040HF, EcoRay",
-        },
-        {
-          src: "/equipment/radiography-2.png",
-          alt: "ORANGE-1040HF, EcoRay",
-        },
-      ],
+      // pictures: [
+      //   {
+      //     src: "/equipment/radiography.png",
+      //     alt: "ORANGE-1040HF, EcoRay",
+      //   },
+      //   {
+      //     src: "/equipment/radiography-3.png",
+      //     alt: "ORANGE-1040HF, EcoRay",
+      //   },
+      //   {
+      //     src: "/equipment/radiography-2.png",
+      //     alt: "ORANGE-1040HF, EcoRay",
+      //   },
+      // ],
     },
     "/vaccination": {
       title: "Вакцинация",
@@ -322,12 +333,38 @@ export const siteConfig = {
     },
     "/scan": {
       title: "Ультразвуковая диагностика",
-      content: `
-      `,
     },
     "/echocardiography": {
       title: "ЭХОкг",
-      content: "...",
+    },
+    "/store": {
+      title: "Ветеринарная аптека",
+      pictures: [
+        {
+          src: "/store/store-1.png",
+          alt: "pharm-1",
+        },
+        {
+          src: "/store/store-2.png",
+          alt: "pharm-2",
+        },
+        {
+          src: "/store/store-3.png",
+          alt: "pharm-3",
+        },
+        {
+          src: "/store/store-4.png",
+          alt: "pharm-4",
+        },
+        {
+          src: "/store/store-5.png",
+          alt: "pharm-5",
+        },
+        {
+          src: "/store/store-6.png",
+          alt: "pharm-6",
+        },
+      ],
     },
   },
 
@@ -341,5 +378,6 @@ export const siteConfig = {
       label: "Прейскурант",
     },
     { href: "/rules", label: "Правила работы с нами" },
+    { href: "/store", label: "Ветеринарная аптека" },
   ],
 };

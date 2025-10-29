@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import {
   Button,
   Dropdown,
+  dropdownItem,
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
@@ -65,6 +66,7 @@ export default function Header() {
   const getNavItems = () => {
     return siteConfig.navItems.map((item) => {
       const isActive = pathname === item.href;
+
       if (item.children) {
         return (
           <Dropdown key={item.label}>

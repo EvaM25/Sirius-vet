@@ -40,7 +40,7 @@ export default function Echocardiography() {
                 <li>Пожилые животные</li>
                 <li>Животные, перенесшие серьезные болезни или травмы</li>
                 <li>
-                  <strong>Представители некоторых пород:</strong>
+                  Представители некоторых пород:
                   <ul>
                     <li>
                       <span className="font-semibold">Кошки:</span> мейн-кун,

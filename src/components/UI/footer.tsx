@@ -20,18 +20,18 @@ export default function Footer() {
             className="w-[125px] h-[125px] mb-[20px]"
           />
           <a
-            href="tel:570175"
+            href="tel:74842570175"
             className="font-bold text-[16px] hover:text-blue-300 transition-colors
               duration-300 "
           >
-            57-01-75
+            +7-(4842)-57-01-75
           </a>
           <a
             href="tel:+79307541060"
             className="font-bold text-[16px] hover:text-blue-300 transition-colors
               duration-300"
           >
-            8 930 754 10 60
+            +7-(930)-754-10-60
           </a>
         </div>
 
@@ -46,18 +46,18 @@ export default function Footer() {
             className="w-[125px] h-[125px] mb-[20px]"
           />
           <a
-            href="tel:570175"
+            href="tel:74842220175"
             className="font-bold text-[16px] hover:text-blue-300 transition-colors
               duration-300"
           >
-            57-01-75
+            +7-(4842)-22-01-75
           </a>
           <a
-            href="tel:+79307541060"
+            href="tel:+79108602233"
             className="font-bold text-[16px] hover:text-blue-300 transition-colors
               duration-300"
           >
-            8 930 754 10 60
+            +7-(910)-860-22-33
           </a>
         </div>
       </div>

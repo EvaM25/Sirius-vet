@@ -22,6 +22,9 @@ export default function Contacts() {
           <strong>Аптека</strong>
         </span>
         <span className="text-[16px] lg:text-[24px]">
+          Режим работы: с 9.00 до 21.00
+        </span>
+        <span className="text-[16px] lg:text-[24px]">
           тел: 22-45-15, 89108602233
         </span>
       </div>

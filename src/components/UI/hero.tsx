@@ -35,7 +35,10 @@ export default function Hero() {
             ул.Баррикад , д.128
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
-            ТЕЛ. 57-01-75 / 8 930 754 1060
+            ТЕЛ. +7-(4842)-57-01-75
+          </span>
+          <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
+            +7-(930)-754-10-60
           </span>
         </div>
 
@@ -62,9 +65,9 @@ export default function Hero() {
             alt="vet-store"
             width={1000}
             height={1000}
-            className="mb-[15px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
+            className="mb-[12px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
           />
-          <h2 className="mb-[7px] lg:mb-[25px] md:mb-[12px]">
+          <h2 className="mb-[5px] lg:mb-[25px] md:mb-[12px]">
             <span className="font-semibold xl:text-[24px] lg:text-[20px] md:text-[16px] text-[11px]">
               ВЕТЕРИНАРНАЯ АПТЕКА
             </span>
@@ -72,14 +75,20 @@ export default function Hero() {
           <span className="mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ооо “Живая планета”
           </span>
-          <span className="lg:mb-[30px] mb-[20px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="lg:mb-[30px] mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             г.Калуга
+          </span>
+          <span className="mb-[5px] font-semibold lg:text-[12px] md:text-[12px] text-[10px]">
+            С 9.00 ДО 21.00
           </span>
           <span className="mb-[10px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ул.Баррикад , д.128
           </span>
           <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
-            ТЕЛ. 57-01-75 / 8 930 754 1060
+            ТЕЛ. +7-(4842)-22-01-75
+          </span>
+          <span className="font-semibold lg:text-[24px] md:text-[16px] text-[11px]">
+            +7-(910)-860-22-33
           </span>
         </div>
       </div>
