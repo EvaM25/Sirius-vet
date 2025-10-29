@@ -50,7 +50,7 @@ export default function Footer() {
             className="font-bold text-[16px] hover:text-blue-300 transition-colors
               duration-300"
           >
-            +7-(4842)-22-01-75
+            +7-(4842)-22-45-15
           </a>
           <a
             href="tel:+79108602233"
