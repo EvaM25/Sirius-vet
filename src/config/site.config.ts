@@ -142,6 +142,21 @@ export const siteConfig = {
             alt: "Ипатова Елена Викторовна",
             name: "Ипатова Елена Викторовна",
           },
+          {
+            src: "/staff/slonevskaya.png",
+            alt: "Слоневская Елена Александровна",
+            name: "Слоневская Елена Александровна",
+          },
+          {
+            src: "/staff/morozov.png",
+            alt: "Морозов Данила Алексеевич",
+            name: "Морозов Данила Алексеевич",
+          },
+          {
+            src: "/staff/lapitskaya.png",
+            alt: "Лапицкая Марина Алексеевна",
+            name: "Лапицкая Марина Алексеевна",
+          },
         ],
         registration: [
           {
@@ -168,6 +183,11 @@ export const siteConfig = {
             src: "/staff/shmakova.png",
             alt: "Шмакова Валентина Алексеевна",
             name: "Шмакова Валентина Алексеевна",
+          },
+          {
+            src: "/staff/kolpakova.png",
+            alt: "Колпакова Дарья Олеговна",
+            name: "Колпакова Дарья Олеговна",
           },
         ],
         pharm: [
