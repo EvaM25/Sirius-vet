@@ -65,7 +65,7 @@ export default function Hero() {
             alt="vet-store"
             width={1000}
             height={1000}
-            className="mb-[12px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
+            className="mb-[12px] w-[166px] h-[166px] md:mb-[27px] md:w-[166px]"
           />
           <h2 className="mb-[5px] lg:mb-[25px] md:mb-[12px]">
             <span className="font-semibold xl:text-[24px] lg:text-[20px] md:text-[16px] text-[11px]">
@@ -75,7 +75,7 @@ export default function Hero() {
           <span className="mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             ооо “Живая планета”
           </span>
-          <span className="lg:mb-[30px] mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
+          <span className="lg:mb-[5px] mb-[5px] font-semibold lg:text-[16px] md:text-[12px] text-[10px]">
             г.Калуга
           </span>
           <span className="mb-[5px] font-semibold lg:text-[12px] md:text-[12px] text-[10px]">
