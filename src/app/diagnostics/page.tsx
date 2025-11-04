@@ -110,6 +110,7 @@ export default function Diagnostics() {
               width={1000}
               height={1000}
               className="w-[300px] h-[300px] md:w-[462px] md:h-[434px] mb-[20px]"
+              unoptimized={true}
             />
             <p>{picture.name}</p>
           </div>
@@ -127,6 +128,7 @@ export default function Diagnostics() {
               width={1000}
               height={1000}
               className="w-[275px] h-[310px] md:w-[462px] md:h-[406px]"
+              unoptimized={true}
             />
             <p>{picture.name}</p>
           </div>

@@ -77,6 +77,7 @@ export default function Store() {
               width={1000}
               height={1000}
               className="w-[275px] h-[310px] md:w-[462px] md:h-[562px]"
+              unoptimized={true}
             />
           </div>
         ))}

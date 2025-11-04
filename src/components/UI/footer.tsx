@@ -18,6 +18,7 @@ export default function Footer() {
             width={1000}
             height={1000}
             className="w-[125px] h-[125px] mb-[20px]"
+            unoptimized={true}
           />
           <a
             href="tel:74842570175"
@@ -44,6 +45,7 @@ export default function Footer() {
             width={1000}
             height={1000}
             className="w-[125px] h-[125px] mb-[20px]"
+            unoptimized={true}
           />
           <a
             href="tel:74842220175"

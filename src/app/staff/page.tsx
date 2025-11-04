@@ -38,6 +38,7 @@ export default function Staff() {
                 width={1000}
                 height={1000}
                 className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
+                unoptimized={true}
               />
               <h4 className="font-bold text-[14px] md:text-[18px]">
                 {doctors.name}
@@ -55,6 +56,7 @@ export default function Staff() {
                 width={1000}
                 height={1000}
                 className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
+                unoptimized={true}
               />
               <h4 className="font-bold text-[14px] md:text-[18px]">
                 {registration.name}
@@ -72,6 +74,7 @@ export default function Staff() {
                 width={1000}
                 height={1000}
                 className="w-[310px] h-[425px] md:w-[452px] md:h-[693px] mb-[10px]"
+                unoptimized={true}
               />
               <h4 className="font-bold text-[14px] md:text-[18px]">
                 {pharm.name}

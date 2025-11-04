@@ -67,19 +67,6 @@ export default function Radiography() {
           рентгенологического исследования.
         </p>
       </div>
-      {/* <div className="flex flex-col items-center gap-[40px]">
-        {equipmentPictures.map((picture, index) => (
-          <div key={index}>
-            <Image
-              src={picture.src}
-              alt={picture.alt}
-              width={1000}
-              height={1000}
-              className="w-[275px] h-[310px] md:w-[462px] md:h-[562px]"
-            />
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 }

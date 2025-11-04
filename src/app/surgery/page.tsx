@@ -51,6 +51,7 @@ export default function Surgery() {
             width={1000}
             height={1000}
             className="w-[275px] h-[333px] md:w-[462px] md:h-[462px]"
+            unoptimized={true}
           />
         </div>
         <p>
@@ -69,6 +70,7 @@ export default function Surgery() {
               width={1000}
               height={1000}
               className="w-[275px] h-[270px] md:w-[462px] md:h-[462px]"
+              unoptimized={true}
             />
           </div>
         ))}
@@ -150,6 +152,7 @@ export default function Surgery() {
               width={1000}
               height={1000}
               className="w-[307px] h-[430px] md:w-[662px] md:h-[623px]"
+              unoptimized={true}
             />
           </div>
         ))}

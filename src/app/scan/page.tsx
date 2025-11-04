@@ -49,6 +49,7 @@ export default function Scan() {
         width={1000}
         height={1000}
         className="mb-[20px] h-[525px] w-[306px] md:w-[532px] md:h-[932px]"
+        unoptimized={true}
       />
       <div className="mb-[20px]">
         <p>

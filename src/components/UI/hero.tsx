@@ -13,6 +13,7 @@ export default function Hero() {
             width={1000}
             height={1000}
             className="mb-[15px] w-[166px] h-[166px] md:mb-[25px] md:w-[166px]"
+            unoptimized={true}
           />
           <h2 className="mb-[5px] flex flex-col items-center">
             <span className="font-semibold text-[11px] xl:text-[24px] lg:text-[20px] md:text-[16px]">
@@ -49,6 +50,7 @@ export default function Hero() {
             width={1000}
             height={1000}
             className="absolute w-[240px] h-[222px] top-[130px] left-[420px] z-[10]"
+            unoptimized={true}
           />
           <Image
             src="/hero-2.png"
@@ -56,6 +58,7 @@ export default function Hero() {
             width={1000}
             height={1000}
             className="absolute w-[316px] h-[290px] top-[5px] right-[380px] z-[5]"
+            unoptimized={true}
           />
         </div>
 
@@ -66,6 +69,7 @@ export default function Hero() {
             width={1000}
             height={1000}
             className="mb-[12px] w-[166px] h-[166px] md:mb-[27px] md:w-[166px]"
+            unoptimized={true}
           />
           <h2 className="mb-[5px] lg:mb-[25px] md:mb-[12px]">
             <span className="font-semibold xl:text-[24px] lg:text-[20px] md:text-[16px] text-[11px]">

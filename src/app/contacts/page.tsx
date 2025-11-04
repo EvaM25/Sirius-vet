@@ -34,6 +34,7 @@ export default function Contacts() {
         width={1000}
         height={1000}
         className="w-[285px] h-[148] md:w-[722] md:h-[380px]"
+        unoptimized={true}
       />
     </div>
   );

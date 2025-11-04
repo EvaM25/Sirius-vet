@@ -82,6 +82,7 @@ export default function Dentistry() {
               width={1000}
               height={1000}
               className="w-[275px] h-[305px] md:w-[462px] md:h-[462px]"
+              unoptimized={true}
             />
             <p>{picture.name}</p>
           </div>

@@ -9,6 +9,7 @@ export default function Home() {
         width={1000}
         height={1000}
         className="mb-[52px] w-[310px] h-[275px] md:w-[562px] md:h-[523px]"
+        unoptimized={true}
       />
       <div className="mb-[40px] text-justify">
         <blockquote className=" italic text-blue-900">
