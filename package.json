@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npm run build && scp -r .next/* j-user@j-host:~/domains/example.ru/.next && ssh j-user@j-host \"mkdir -p ~/domains/example.ru/tmp && touch ~/domains/example.ru/tmp/restart.txt\""
   },
   "dependencies": {
     "@heroui/navbar": "^2.2.24",
