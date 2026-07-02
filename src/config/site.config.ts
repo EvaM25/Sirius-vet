@@ -212,11 +212,6 @@ export const siteConfig = {
             name: "Ходакин Александр Игоревич",
           },
           {
-            src: "/staff/kulakova.png",
-            alt: "Кулакова Елена Александровна",
-            name: "Кулакова Елена Александровна",
-          },
-          {
             src: "/staff/yurina.png",
             alt: "Юрина Ольга Владимировна",
             name: "Юрина Ольга Владимировна",
@@ -292,20 +287,6 @@ export const siteConfig = {
     },
     "/radiography": {
       title: "Цифровая рентгенография",
-      // pictures: [
-      //   {
-      //     src: "/equipment/radiography.png",
-      //     alt: "ORANGE-1040HF, EcoRay",
-      //   },
-      //   {
-      //     src: "/equipment/radiography-3.png",
-      //     alt: "ORANGE-1040HF, EcoRay",
-      //   },
-      //   {
-      //     src: "/equipment/radiography-2.png",
-      //     alt: "ORANGE-1040HF, EcoRay",
-      //   },
-      // ],
     },
     "/vaccination": {
       title: "Вакцинация",
